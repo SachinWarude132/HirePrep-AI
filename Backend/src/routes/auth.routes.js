@@ -21,10 +21,10 @@ authRouter.post("/login",authcontroller.LoginUser)
  */
 authRouter.post("/logout", authcontroller.UserLogout)
 
-// /**
-//  * @route GET /api/auth/get-me
-//  * @description : get the user data
-//  */
+/**
+ * @route GET /api/auth/get-me
+ * @description : get the user data
+ */
 authRouter.get("/get-me", authMiddleware.AuthUser,authcontroller.getme)
 
 
