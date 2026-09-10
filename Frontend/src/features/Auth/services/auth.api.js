@@ -15,6 +15,7 @@ const api = axios.create({
     }
     catch(err){
         console.log(err.message)
+                throw err;
     }
     
 }
@@ -28,6 +29,7 @@ const api = axios.create({
     }
     catch(err){
         console.log(err.message)
+                throw err;
     }
     
 }
@@ -39,6 +41,7 @@ const api = axios.create({
     }
     catch(err){
         console.log(err.message)
+                throw err;
     }}
  export async function getme() {
     try{
@@ -47,4 +50,5 @@ const api = axios.create({
     }
     catch(err){
         console.log(err.message)
+                throw err;
     }}

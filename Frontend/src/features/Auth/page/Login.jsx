@@ -15,8 +15,15 @@ const Login = () => {
   
   function HandleSubmit(e){
     e.preventDefault();
-    handleLogin({email,password})
+
+    try {
+        handleLogin({email,password})
     Navigate("/")
+    } catch (error) {
+        console.log(error)
+        throw error
+    }
+     
 
   }
   if(loading){

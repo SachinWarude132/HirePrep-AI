@@ -12,7 +12,7 @@ if(!token){
     })
 }
 
-Istokenblacklisted = await tokenBlacklistModel.findOne({token})
+const Istokenblacklisted = await tokenBlacklistModel.findOne({token})
 
 if(Istokenblacklisted){
     return res.status(401).json({
