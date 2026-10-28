@@ -16,6 +16,7 @@ const [loading, setLoading] = useState(true);
             const data = await getme();
             setUser(data?.user);
         } catch (error) {
+            console.log(error)
             setUser(null);
         } finally {
             setLoading(false);

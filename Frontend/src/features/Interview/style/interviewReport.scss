@@ -1,0 +1,616 @@
+.report-page {
+  min-height: 100vh;
+
+  width: 100%;
+
+  padding: 70px 6vw 100px;
+
+  background: #f4f4f1;
+
+  color: #171717;
+}
+
+.report-container {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.report-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 40px;
+
+  padding-bottom: 45px;
+
+  border-bottom: 1px solid #d7d7d2;
+}
+
+.report-eyebrow {
+  margin: 0 0 18px;
+
+  color: #73736d;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+.report-header h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  line-height: 1;
+
+  letter-spacing: -0.045em;
+
+  font-weight: 600;
+}
+
+.report-subtitle {
+  max-width: 550px;
+
+  margin: 22px 0 0;
+
+  color: #777771;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.report-id {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 7px;
+
+  color: #7b7b75;
+
+  font-size: 9px;
+
+  letter-spacing: 0.12em;
+}
+
+.report-id strong {
+  color: #171717;
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+  letter-spacing: -0.03em;
+}
+
+
+/* =========================
+   SCORE SECTION
+========================= */
+
+.score-section {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    1fr;
+
+  gap: 20px;
+
+  padding: 35px 0;
+}
+
+
+/* Score card */
+
+.score-card {
+  padding: 30px;
+
+  background: #171717;
+
+  color: #ffffff;
+
+  border-radius: 3px;
+}
+
+.score-label {
+  color: #a7a7a1;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.score-number {
+  margin-top: 25px;
+
+  font-size: 92px;
+
+  line-height: 0.9;
+
+  letter-spacing: -0.07em;
+
+  font-weight: 500;
+}
+
+.score-number span {
+  margin-left: 5px;
+
+  color: #969690;
+
+  font-size: 30px;
+
+  letter-spacing: -0.03em;
+}
+
+.score-bar {
+  height: 3px;
+
+  margin-top: 35px;
+
+  background: #41413d;
+
+  overflow: hidden;
+}
+
+.score-progress {
+  height: 100%;
+
+  background: #ffffff;
+
+  transition: width 0.5s ease;
+}
+
+.score-card p {
+  max-width: 390px;
+
+  margin: 20px 0 0;
+
+  color: #9c9c96;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+
+/* Summary */
+
+.score-summary {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid #d5d5d0;
+
+  border-bottom: 1px solid #d5d5d0;
+}
+
+.score-summary > div {
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 25px 18px;
+
+  border-right: 1px solid #d5d5d0;
+}
+
+.score-summary > div:last-child {
+  border-right: none;
+}
+
+.score-summary span {
+  color: #85857e;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+}
+
+.score-summary strong {
+  margin-top: 20px;
+
+  font-size: 34px;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: -0.04em;
+}
+
+.score-summary small {
+  margin-top: 8px;
+
+  color: #8c8c85;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================
+   REPORT SECTIONS
+========================= */
+
+.report-section {
+  padding: 55px 0;
+
+  border-top: 1px solid #d7d7d2;
+}
+
+.section-title {
+  display: grid;
+
+  grid-template-columns: 45px 1fr;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.section-title > span {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+
+  border: 1px solid #c8c8c2;
+
+  border-radius: 50%;
+
+  color: #777771;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+.section-title h2 {
+  margin: 0;
+
+  font-size: 23px;
+
+  font-weight: 600;
+
+  letter-spacing: -0.025em;
+}
+
+.section-title p {
+  margin: 7px 0 0;
+
+  color: #85857e;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 1px;
+
+  background: #d2d2cd;
+
+  border: 1px solid #d2d2cd;
+}
+
+.skill-card {
+  display: flex;
+
+  gap: 18px;
+
+  min-height: 115px;
+
+  padding: 23px;
+
+  background: #fafaf8;
+}
+
+.skill-index {
+  color: #9a9a94;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.skill-card h3 {
+  margin: 0;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.skill-card p {
+  margin: 8px 0 0;
+
+  color: #7d7d76;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   QUESTIONS
+========================= */
+
+.question-list {
+  border-top: 1px solid #d5d5d0;
+}
+
+.question-item {
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 15px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #d5d5d0;
+}
+
+.question-number {
+  color: #999992;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.question-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.question-topic {
+  color: #888881;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.1em;
+}
+
+.question-content h3 {
+  margin: 0;
+
+  max-width: 850px;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   PREPARATION
+========================= */
+
+.preparation-section {
+  padding-bottom: 20px;
+}
+
+.preparation-list {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.preparation-item {
+  display: grid;
+
+  grid-template-columns: 60px 1fr;
+
+  gap: 20px;
+
+  padding: 25px 0;
+
+  border-top: 1px solid #d5d5d0;
+}
+
+.day-number {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 38px;
+
+  height: 38px;
+
+  border: 1px solid #c9c9c4;
+
+  border-radius: 50%;
+
+  color: #666660;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.preparation-item h3 {
+  margin: 3px 0 0;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.preparation-item p {
+  max-width: 750px;
+
+  margin: 8px 0 0;
+
+  color: #777771;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-report {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.empty-report span {
+  color: #85857e;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+.empty-report h1 {
+  margin: 18px 0 8px;
+
+  font-size: 40px;
+
+  letter-spacing: -0.04em;
+
+  font-weight: 600;
+}
+
+.empty-report p {
+  margin: 0;
+
+  color: #85857e;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+  .report-page {
+    padding: 45px 25px 70px;
+  }
+
+  .score-section {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .report-page {
+    padding: 35px 18px 60px;
+  }
+
+  .report-header {
+    flex-direction: column;
+  }
+
+  .report-id {
+    display: none;
+  }
+
+  .report-header h1 {
+    font-size: 43px;
+  }
+
+  .score-number {
+    font-size: 75px;
+  }
+
+  .score-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .score-summary > div {
+    border-right: none;
+
+    border-bottom: 1px solid #d5d5d0;
+  }
+
+  .score-summary > div:last-child {
+    border-bottom: none;
+  }
+
+  .section-title {
+    grid-template-columns: 35px 1fr;
+  }
+
+  .question-item {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .preparation-item {
+    grid-template-columns: 45px 1fr;
+  }
+}
